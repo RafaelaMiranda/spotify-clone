@@ -1,0 +1,101 @@
+/*======================================== LAYOUT ======================================== */
+
+html, body, .cover{
+    height: 100%;
+}
+
+body {
+    background: url('img/cover.png'),
+                url('img/noise.png'),
+                linear-gradient(50deg,#FF4169, #7C26F8);
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+/* === Navbar === */
+.img-logo {
+    background: url('img/spotify.svg') no-repeat;
+    background-size: contain;
+    color: transparent;
+    display: block;
+    height: 40px;
+    width: 132px;
+}
+
+nav.navbar-transparent {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    padding: 15px 0px;
+}
+
+.divisor{
+    background: white;
+    height: 16px;
+    margin: 12px 10px;
+    width: 1px;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav .nav-link:hover {
+    color: #9BF0E1;
+}
+
+/* === Cover === */
+
+.cover {
+    display: table;
+    width: 100%;
+}
+
+.cover-text {
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* === Buttons === */
+
+.btn-custom {
+    background: #7C25F8;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    color: white;
+    margin: 0px 15px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+}
+
+.btn-custom:hover {
+    background-color: #6207E3;
+    color: white;
+}
+
+
+.btn-outline {
+    border: 1px solid white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    margin: 0px 15px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+}
+
+.btn-outline:hover {
+    color: black;
+}
+
+/*======================================== TYPOGRAPHY ======================================== */
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
