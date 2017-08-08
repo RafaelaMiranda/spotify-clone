@@ -10,6 +10,7 @@ body {
                 linear-gradient(50deg,#FF4169, #7C26F8);
     background-attachment: fixed;
     font-family: Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
 }
 
 /* === Navbar === */
@@ -91,6 +92,35 @@ nav.navbar-transparent {
     color: black;
 }
 
+/* === Services === */
+
+#services {
+    background: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.album {
+    height: 250;
+    padding: 10px  10px 10px 10px;
+    width: 250;
+}
+
+/* === Resources === */
+
+#resources {
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.rotation {
+    padding-left: 43px;
+    transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg); 
+}
+
 /*======================================== TYPOGRAPHY ======================================== */
 
 h1 {
@@ -98,4 +128,24 @@ h1 {
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#services h2, #services h3 {
+    color: #7C25F8;
+}
+
+#resources h3 {
+    color: #9BF0E1;
 }
