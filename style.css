@@ -2,6 +2,7 @@
 
 html, body, .cover{
     height: 100%;
+    overflow: auto;
 }
 
 body {
@@ -67,8 +68,6 @@ nav.navbar-transparent {
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
     color: white;
-    margin: 0px 15px;
-    padding: 10px 35px;
     text-transform: uppercase;
 }
 
@@ -136,7 +135,6 @@ footer {
 /*======================================== TYPOGRAPHY ======================================== */
 
 h1 {
-    font-size: 100px;
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
@@ -167,3 +165,59 @@ h3 {
 #resources h3 {
     color: #9BF0E1;
 }
+
+/*======================================== MEDIA QUERIES ======================================== */
+
+/* phones < 768*/
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+
+    .img-logo {
+        background: url('img/spotify.svg') no-repeat;
+        background-size: contain;
+        color: transparent;
+        display: block;
+        height: 25px;
+        width: 118px;
+    }
+
+    #services h2, #services h3 {
+        color: #7C25F8;
+        font-size: 28px;
+    }
+
+    .delete-phone {
+        display: none;
+    }
+    
+}
+    /* tablets  */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
+/* desktops  */
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+/* larger desktops  */
+
+@media screen and (min-width: 993px) {
+    h1 {
+        font-size: 100px;
+    }
+}
+
